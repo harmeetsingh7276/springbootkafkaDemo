@@ -8,12 +8,12 @@ import org.springframework.kafka.config.TopicBuilder;
 @Configuration
 public class KafkaTopicConfig {
     @Bean
-    public NewTopic personalTopic(){
+    public NewTopic personalTopic() {
         return TopicBuilder.name("personal").build();
     }
 
     @Bean
-    public NewTopic personalJsonTopic(){
+    public NewTopic personalJsonTopic() {
         return TopicBuilder.name("personal_json").build();
     }
 }
