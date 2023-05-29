@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "6a7ff794-0013-4dc4-a91c-f31c2e498791",
+		"name": "Learning Kafka",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12457429"
+	},
+	"item": [
+		{
+			"name": "PublishJSONMessage",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\":1,\n    \"firstName\":\"Harmeet Singh\",\n    \"lastName\":\"Gorowada\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/kafka/publish",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"kafka",
+						"publish"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
